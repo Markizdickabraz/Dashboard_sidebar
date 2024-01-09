@@ -11,17 +11,16 @@
 
 <body>
 
-    <nav class="sidebar">
+    <nav class="sidebar close">
         <header>
             <div class="image_text">
-                <!-- <span class="image">
-                <img src="" alt="">
-                    
-                </span> -->
-                <p>logo</p>
+                <!-- <span class="image"> -->
+                <i class='bx bxs-universal-access image'
+                    style="color: cadetblue; width: 60; height: 60; font-size: 44px;"></i>
+                <!-- </span> -->
                 <div class="text header_text">
-                    <span class="name">CodingLab</span>
-                    <span class="profession">Web developer</span>
+                    <span class="name ">CodingLab</span>
+                    <span class="profession ">Web developer</span>
                 </div>
             </div>
 
@@ -34,7 +33,7 @@
 
                 <li class="search_box">
                     <i class='bx bx-search icon'></i>
-                    <input type="search" placeholder="Search...">
+                    <input type="text" placeholder="Search...">
                 </li>
 
                 <ul class="menu_links">
@@ -76,9 +75,35 @@
                     </li>
                 </ul>
             </div>
+            <div class="bottom_content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav_text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="moon_sun">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+
+                    <span class="mode_text text">Dark Mode</span>
+                    <div class="toggle_switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </div>
+
         </div>
     </nav>
 
+    <section class="home">
+        <div class="text">Dashboard</div>
+    </section>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
