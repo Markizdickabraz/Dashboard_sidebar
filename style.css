@@ -41,6 +41,10 @@ body {
   background: var(--sidebar-color);
 }
 
+.sidebar header {
+  position: relative;
+}
+
 .sidebar header .image_text {
   display: flex;
   align-items: center;
@@ -68,4 +72,76 @@ header .image_text .header_text {
 }
 .header_text .profession {
   margin-top: -2px;
+}
+
+.sidebar header .toggle {
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  transform: translateY(-50%);
+  height: 25px;
+  width: 25px;
+  background: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--sidebar-color);
+  font-size: 22px;
+}
+
+.sidebar li {
+  height: 50px;
+  margin-top: 10px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.sidebar li .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;
+  font-size: 20px;
+}
+
+.sidebar li .icon,
+.sidebar li .text {
+  color: var(--text-color);
+  transition: var(--tran-02);
+}
+
+.sidebar li a {
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  transition: var(--tran-04);
+  border-radius: 6px;
+}
+
+.sidebar li a:hover {
+  background: var(--primary-color);
+}
+
+.sidebar li a:hover .icon,
+.sidebar li a:hover .text {
+  color: var(--sidebar-color);
+}
+
+.sidebar .search_box {
+  background: var(--primary-color-light);
+  border-radius: 6px;
+}
+
+.search_box input {
+  height: 100%;
+  width: 100%;
+  background: var(--primary-color-light);
+  outline: none;
+  border: none;
+  border-radius: 6px;
 }
