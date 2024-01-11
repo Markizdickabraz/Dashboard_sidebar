@@ -21,6 +21,12 @@
   --tran-05: all 0.5s ease;
 }
 
+.bxs-universal-access {
+  width: 60px;
+  height: 60px;
+  font-size: 44px;
+  color: lightseagreen;
+}
 /* .image_text {
     width: 40px;
     border-radius: 6px;
@@ -117,6 +123,7 @@ header .image_text .header_text {
   font-size: 22px;
   transform: translateY(-50%) rotate(180deg);
   transition: var(--tran-03);
+  cursor: pointer;
 }
 
 .sidebar.close header .toggle {
@@ -131,16 +138,23 @@ body.dark .sidebar header .toggle {
   color: var(--text-color);
 }
 
-.sidebar li {
+.sidebar li,
+.search_box,
+.logout_box,
+.mode {
   height: 50px;
   margin-top: 10px;
   list-style: none;
   display: flex;
   align-items: center;
   border-radius: 6px;
+  cursor: pointer;
 }
 
-.sidebar li .icon {
+.sidebar li .icon,
+.search_box .icon,
+.logout_box .icon,
+.mode .icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -149,12 +163,18 @@ body.dark .sidebar header .toggle {
 }
 
 .sidebar li .icon,
-.sidebar li .text {
+.sidebar li .text,
+.search_box .icon,
+.logout_box .icon,
+.logout_box .nav_text,
+.mode .icon,
+.mode .mode_text {
   color: var(--text-color);
   transition: var(--tran-02);
 }
 
-.sidebar li a {
+.sidebar li a,
+.logout_box a {
   text-decoration: none;
   height: 100%;
   width: 100%;
@@ -164,17 +184,22 @@ body.dark .sidebar header .toggle {
   border-radius: 6px;
 }
 
-.sidebar li a:hover {
+.sidebar li a:hover,
+.logout_box a:hover {
   background: var(--primary-color);
 }
 
 .sidebar li a:hover .icon,
-.sidebar li a:hover .text {
+.sidebar li a:hover .text,
+.logout_box a:hover .icon,
+.logout_box a:hover .nav_text {
   color: var(--sidebar-color);
 }
 
 body.dark .sidebar li a:hover .icon,
-body.dark .sidebar li a:hover .text {
+body.dark .sidebar li a:hover .text,
+body.dark .logout_box a:hover .icon,
+body.dark .logout_box a:hover .nav_text {
   color: var(--text-color);
 }
 
